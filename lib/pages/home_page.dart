@@ -1,9 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:wersomd_app/pages/welcome_page.dart';
 
 import '../models/people_also_like_model.dart';
-import '../nav_pages.dart/main_wrapper.dart';
 import '../pages/details_page.dart';
 import '../widgets/reuseable_text.dart';
 import '../models/tab_bar_model.dart';
@@ -24,7 +23,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    tabController = TabController(length: 2, vsync: this);
+    tabController = TabController(
+      length: 2,
+      vsync: this,
+    );
     super.initState();
   }
 
@@ -61,48 +63,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ),
                   ),
                   FadeInUp(
-                    delay: const Duration(milliseconds: 500),
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                          bottom: size.height * 0.01, top: size.height * 0.02),
-                      child: TextField(
-                        style: GoogleFonts.ubuntu(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.grey,
-                        ),
-                        decoration: InputDecoration(
-                          contentPadding: const EdgeInsets.symmetric(
-                            vertical: 0,
-                            horizontal: 20,
-                          ),
-                          filled: true,
-                          fillColor: const Color.fromARGB(255, 240, 240, 240),
-                          suffixIcon: IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.search,
-                              color: Colors.black,
-                            ),
-                          ),
-                          hintStyle: GoogleFonts.ubuntu(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.grey,
-                          ),
-                          hintText: "Поиск",
-                          border: OutlineInputBorder(
-                            borderSide: BorderSide.none,
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  FadeInUp(
                     delay: const Duration(milliseconds: 600),
                     child: Container(
-                      margin: const EdgeInsets.only(top: 10.0),
+                      margin: const EdgeInsets.only(top: 40.0),
                       width: size.width,
                       child: Align(
                         alignment: Alignment.centerLeft,
@@ -147,8 +110,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ),
                   ),
                   FadeInUp(
-                      delay: const Duration(milliseconds: 1000),
-                      child: const MiddleAppText(text: "Многим нравится")),
+                    delay: const Duration(milliseconds: 1000),
+                    child: const MiddleAppText(text: "Многим нравится"),
+                  ),
                   FadeInUp(
                     delay: const Duration(milliseconds: 1100),
                     child: Container(
@@ -234,7 +198,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         },
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -252,9 +216,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         child: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: const Icon(
-            Icons.menu,
-            color: Colors.black,
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.menu,
+              color: Colors.black,
+            ),
           ),
           actions: [
             Padding(
@@ -263,9 +230,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
               child: GestureDetector(
                 onTap: (() => Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const MainWrapper()))),
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const WelcomePage(),
+                      ),
+                    )),
                 child: const CircleAvatar(
                   radius: 30,
                   backgroundImage: AssetImage("assets/images/main.png"),

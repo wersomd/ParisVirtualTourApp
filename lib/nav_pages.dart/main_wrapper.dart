@@ -64,57 +64,20 @@ class _MainWrapperState extends State<MainWrapper> {
               outlinedIcon: Icons.home_outlined,
             ),
             BarItem(
-                filledIcon: Icons.favorite_rounded,
-                outlinedIcon: Icons.favorite_border_rounded),
+              filledIcon: Icons.favorite_rounded,
+              outlinedIcon: Icons.favorite_border_rounded,
+            ),
             BarItem(
-                filledIcon: Icons.mail,
-                outlinedIcon: Icons.mail_outline_outlined),
+              filledIcon: Icons.mail,
+              outlinedIcon: Icons.mail_outline_outlined,
+            ),
             BarItem(
-                filledIcon: Icons.people, outlinedIcon: Icons.people_outline),
+              filledIcon: Icons.people,
+              outlinedIcon: Icons.person_outline,
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-//  BottomNavigationBar(
-//           unselectedFontSize: 0,
-//           selectedFontSize: 0,
-//           type: BottomNavigationBarType.fixed,
-//           currentIndex: currentIndex,
-//           showSelectedLabels: false,
-//           showUnselectedLabels: false,
-//           backgroundColor: Colors.white,
-//           onTap: onTap,
-//           elevation: 0,
-//           unselectedItemColor: Colors.grey,
-//           selectedItemColor: Colors.deepPurpleAccent,
-//           items: const [
-//             BottomNavigationBarItem(
-//               label: "Home",
-//               icon: Icon(
-//                 Icons.apps_rounded,
-//               ),
-//             ),
-//             BottomNavigationBarItem(
-//               label: "Bar",
-//               icon: Icon(
-//                 Icons.bar_chart_sharp,
-//               ),
-//             ),
-//             BottomNavigationBarItem(
-//               label: "Search",
-//               icon: Icon(
-//                 Icons.search,
-//               ),
-//             ),
-//             BottomNavigationBarItem(
-//               label: "My Profile",
-//               icon: Icon(
-//                 Icons.person,
-//               ),
-//             ),
-//           ],
-//         ),

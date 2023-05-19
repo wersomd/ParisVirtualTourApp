@@ -101,7 +101,8 @@ class _WelcomePageState extends State<WelcomePage> {
                                   duration: const Duration(milliseconds: 1100),
                                   child: Padding(
                                     padding: EdgeInsets.only(
-                                        top: size.height * 0.08),
+                                      top: size.height * 0.08,
+                                    ),
                                     child: MaterialButton(
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(15),
@@ -143,8 +144,9 @@ class _WelcomePageState extends State<WelcomePage> {
                                   },
                                   child: AnimatedContainer(
                                     margin: EdgeInsets.only(
-                                        right: size.width * 0.01,
-                                        bottom: size.height * 0.008),
+                                      right: size.width * 0.01,
+                                      bottom: size.height * 0.008,
+                                    ),
                                     width: 10,
                                     height: index == indexDots ? 55 : 10,
                                     duration: const Duration(milliseconds: 200),
@@ -153,7 +155,11 @@ class _WelcomePageState extends State<WelcomePage> {
                                       color: index == indexDots
                                           ? Colors.deepPurpleAccent
                                           : const Color.fromARGB(
-                                              255, 193, 170, 255),
+                                              255,
+                                              193,
+                                              170,
+                                              255,
+                                            ),
                                     ),
                                   ),
                                 ),

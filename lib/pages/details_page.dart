@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../models/people_also_like_model.dart';
 import '../models/tab_bar_model.dart';
+import '../tours/eiffel_tour_page.dart';
 import '../widgets/reuseable_text.dart';
 
 class DetailsPage extends StatefulWidget {
@@ -22,7 +23,7 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
-  int selected = 0;
+  bool isLike = false;
   final EdgeInsetsGeometry padding =
       const EdgeInsets.symmetric(horizontal: 20.0);
   dynamic current;
@@ -184,20 +185,25 @@ class _DetailsPageState extends State<DetailsPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Container(
-                                  width: size.width * 0.14,
-                                  height: size.height * 0.06,
-                                  decoration: BoxDecoration(
-                                      border: Border.all(
-                                          color: Colors.deepPurpleAccent,
-                                          width: 2),
-                                      borderRadius: BorderRadius.circular(10)),
-                                  child: IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
-                                      Icons.favorite_border,
-                                      color: Colors.deepPurpleAccent,
-                                    ),
-                                  )),
+                                width: size.width * 0.14,
+                                height: size.height * 0.06,
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                        color: Colors.deepPurpleAccent,
+                                        width: 2),
+                                    borderRadius: BorderRadius.circular(10)),
+                                child: IconButton(
+                                  onPressed: () {
+                                    setState(() => isLike = !isLike);
+                                  },
+                                  icon: Icon(
+                                    Icons.favorite_border_outlined,
+                                    color: isLike
+                                        ? Colors.red
+                                        : Colors.deepPurpleAccent,
+                                  ),
+                                ),
+                              ),
                               MaterialButton(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15),
@@ -205,7 +211,14 @@ class _DetailsPageState extends State<DetailsPage> {
                                 minWidth: size.width * 0.6,
                                 height: size.height * 0.06,
                                 color: Colors.deepPurpleAccent,
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const EiffelTower(),
+                                    ),
+                                  );
+                                },
                                 child: const AppText(
                                   text: "Путешествовать",
                                   size: 16,
