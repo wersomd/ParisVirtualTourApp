@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1077105933491",
+    "project_id": "parisvirtualtourdb",
+    "storage_bucket": "parisvirtualtourdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077105933491:android:72b052e65248d7590284c6",
+        "android_client_info": {
+          "package_name": "com.wersomd.wersomd_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077105933491-8i202pk5s85ge3hhvm5dpe61i4n4r0uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBck-aE1sJmcBRtHNsp7869jbpMg8nD6fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077105933491-8i202pk5s85ge3hhvm5dpe61i4n4r0uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

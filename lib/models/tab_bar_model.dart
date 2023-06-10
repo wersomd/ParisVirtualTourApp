@@ -18,7 +18,7 @@ List<TabBarModel> places = [
   TabBarModel(
       title: "Эйфелевая башня",
       location: "Париж",
-      image: "assets/images/paris.jpg",
+      image: "assets/images/paris.webp",
       year: 1889,
       description:
           "Чем бы был Париж без его известного символа Эйфелевой башни? Построенная Густавом Эйфелом в честь юбилея со дня Французской Революции, она была представлена на Всемирной Выставке 1889 года. В вышину Эйфелева башня достигает 324 метра, и является одним из самых посещаемых памятников в мире с 7 миллионами визитеров в год."),
@@ -40,7 +40,7 @@ List<TabBarModel> places = [
 List<TabBarModel> inspiration = [
   TabBarModel(
       title: "Круиз по Сене",
-      location: "париж",
+      location: "Париж",
       image: "assets/images/cruiz.webp",
       year: 543,
       description:
