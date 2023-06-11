@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:wersomd_app/pages/home/welcome_page.dart';
-import 'package:wersomd_app/pages/wrapper/main_wrapper.dart';
+import 'package:wersomd_app/views/home/welcome.dart';
+import 'package:wersomd_app/views/wrapper/main_wrapper.dart';
 
 class FirebaseStream extends StatelessWidget {
   const FirebaseStream({super.key});

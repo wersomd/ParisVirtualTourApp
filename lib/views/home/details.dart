@@ -1,8 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/people_also_like_model.dart';
-import '../../models/tab_bar_model.dart';
+import '../../models/people_also_like.dart';
+import '../../models/tab_bar.dart';
 import '../tours/eiffel_page.dart';
 import '../../widgets/reuseable_text.dart';
 

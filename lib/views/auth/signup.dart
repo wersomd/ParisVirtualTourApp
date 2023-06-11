@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:wersomd_app/pages/auth/signin_page.dart';
+import 'package:wersomd_app/views/auth/signin.dart';
 
 import '../../widgets/snack_bar.dart';
 

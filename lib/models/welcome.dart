@@ -17,12 +17,12 @@ List<WelcomeModel> welcomeComponents = [
       title: "Путешествие",
       subTitle: "Дороги",
       description: "Путешествуйте по дорогам Франции.",
-      imageUrl: "assets/images/welcome-1.png"),
+      imageUrl: "assets/images/welcome-2.jpg"),
   WelcomeModel(
       title: "Наслаждаться",
       subTitle: "Исторические места",
       description: "Насладиться французской архитектурой",
-      imageUrl: "assets/images/welcome-2.jpg"),
+      imageUrl: "assets/images/welcome-1.png"),
   WelcomeModel(
       title: "Открывать",
       subTitle: "Францию",

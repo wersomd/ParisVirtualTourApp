@@ -2,7 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../models/welcome_model.dart';
+import '../../models/welcome.dart';
 import '../../widgets/reuseable_text.dart';
 import '../wrapper/main_wrapper.dart';
 
